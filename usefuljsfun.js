@@ -26,4 +26,5 @@ function removeDollarSignFromAmount(amount){
         return false;
 
     return moment(selectedDate, format,true).isValid();
+      
 }
