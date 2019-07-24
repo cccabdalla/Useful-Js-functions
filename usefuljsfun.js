@@ -14,6 +14,7 @@ function removeDollarSignFromAmount(amount){
         return parseInt(amount.replace(/\$/g, ''));
   
   }
+
 /**
  * used to validate date format based on a given format
  * @param {*} selectedDate 
