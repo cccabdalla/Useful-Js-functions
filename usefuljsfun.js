@@ -14,3 +14,15 @@ function removeDollarSignFromAmount(amount){
         return parseInt(amount.replace(/\$/g, ''));
   
   }
+/**
+ * used to validate date format based on a given format
+ * @param {*} selectedDate 
+ * @param {*} format 
+ */
+  function isDateFormatValid(selectedDate,format){
+    var moment = require('moment');
+    if(!format || !selectedDate || typeof format !== 'string' || typeof selectedDate !== 'string')
+        return false;
+
+    return moment(selectedDate, format,true).isValid();
+}
